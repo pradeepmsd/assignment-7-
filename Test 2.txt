@@ -1,0 +1,29 @@
+1)
+    str = input()
+rev = ""
+num1 = len(str);
+j = num1 - 1
+for i in range(0, num1):
+   rev = rev + str[j]
+   j = j - 1
+print(rev)
+
+2)
+
+test_string = "welcome"
+
+print("The original string : " + str(test_string)) 
+
+res = ''.join(sorted(test_string)) 
+
+print("String after sorting : " + str(res))
+
+3)
+
+arr = [ 1 ,2, 3, 4, 5, 6, 7 ]
+n = len(arr)
+num = 5
+for i in range(0, n): 
+for j in range(i+1, n):
+if((arr[i]+arr[j])==num):
+print(arr[i]," + ",arr[j]," = ",num)
